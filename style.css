@@ -60,6 +60,7 @@ h3 {
 }
 
 main {
+    position: relative;
     border-top: 4px solid #cfd6dd;
     margin: 0 10%;
     display: grid;
@@ -69,6 +70,16 @@ main {
         "skills car-sum"
         "char-refs education"
         "reach-me education";
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 3rem;
+    width: 4px;
+    height: 90%;
+    background-color: #cfd6dd;
 }
 
 .profile {
