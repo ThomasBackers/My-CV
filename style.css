@@ -22,9 +22,6 @@ header::before {
     height: 15rem;
     border-radius: 50%;
     z-index: 1;
-}
-
-.profile-picture, h1, h2 {
     margin: auto;
 }
 
@@ -61,32 +58,34 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.profile {
+.profile, .skills, .character-references, .how-to-reach-me {
     grid-column: 1 / 2;
+}
+
+.profile {
     grid-row: 1 / 2;
 }
 
 .skills {
-    grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
 .character-references {
-    grid-column: 1 / 2;
     grid-row: 3 / 4;
 }
 
 .how-to-reach-me {
-    grid-column: 1 / 2;
     grid-row: 4 / 5;
 }
 
-.career-summary {
+.career-summary, .educational-training {
     grid-column: 2 / 3;
+}
+
+.career-summary {
     grid-row: 1 / 3;
 }
 
 .educational-training {
-    grid-column: 2 / 3;
     grid-row: 3 / 5;
 }
