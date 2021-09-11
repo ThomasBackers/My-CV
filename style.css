@@ -45,7 +45,7 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 h3 {
@@ -53,39 +53,37 @@ h3 {
 }
 
 main {
+    border-top: 4px solid #cfd6dd;
+    margin: 0 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.profile, .skills, .character-references, .how-to-reach-me {
-    grid-column: 1 / 2;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-areas: 
+        "profile car-sum"
+        "skills car-sum"
+        "char-refs education"
+        "reach-me education";
 }
 
 .profile {
-    grid-row: 1 / 2;
+    grid-area: profile;
 }
 
 .skills {
-    grid-row: 2 / 3;
+    grid-area: skills;
 }
 
 .character-references {
-    grid-row: 3 / 4;
+    grid-area: char-refs;
 }
 
 .how-to-reach-me {
-    grid-row: 4 / 5;
-}
-
-.career-summary, .educational-training {
-    grid-column: 2 / 3;
+    grid-area: reach-me;
 }
 
 .career-summary {
-    grid-row: 1 / 3;
+    grid-area: car-sum;
 }
 
 .educational-training {
-    grid-row: 3 / 5;
+    grid-area: education;
 }
