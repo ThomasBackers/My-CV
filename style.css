@@ -63,6 +63,7 @@ main {
     position: relative;
     border-top: 4px solid #cfd6dd;
     margin: 0 10%;
+    padding-top: 4rem;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
     grid-template-areas: 
@@ -76,7 +77,7 @@ main::before {
     content: '';
     position: absolute;
     left: 50%;
-    top: 3rem;
+    top: 4rem;
     width: 4px;
     height: 90%;
     background-color: #cfd6dd;
@@ -106,12 +107,12 @@ main::before {
     grid-area: education;
 }
 
-.career-summary, .educational-training {
-    padding-left: 25%;
+.profile, .skills, .character-references, .how-to-reach-me {
+    padding-right: 25%;
 }
 
-section {
-    align-self: center;
+.career-summary, .educational-training {
+    padding-left: 25%;
 }
 
 h4 {
