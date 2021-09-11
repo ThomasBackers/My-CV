@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+body {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 1.1rem;
+}
 
 header {
     position: relative;
@@ -50,6 +56,7 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
+    padding-bottom: 3%;
 }
 
 main {
@@ -86,4 +93,27 @@ main {
 
 .educational-training {
     grid-area: education;
+}
+
+.career-summary, .educational-training {
+    padding-left: 25%;
+}
+
+section {
+    align-self: center;
+}
+
+h4 {
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+ul {
+    list-style: circle;
+    padding-left: 2rem;
+}
+
+p, ul {
+    padding-bottom: 1rem;
+    max-width: 20rem;
 }
